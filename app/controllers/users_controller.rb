@@ -15,7 +15,7 @@ class UsersController < ApplicationController
     new_user = User.new(user)
     if new_user.save
       redirect_to(user_path(new_user))
-      flash.notice = 'User Created Successfully'
+      flash.notice = 'User Registered Successfully'
     else
       flash.alert = new_user.errors.full_messages.to_sentence
       render :new
