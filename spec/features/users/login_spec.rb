@@ -31,7 +31,7 @@ RSpec.describe 'user login' do
 
       click_on 'Login'
 
-      expect(current_path).to eq(user_path(@user_1))
+      expect(current_path).to eq(dashboard_path)
     
       expect(page).to have_content("Welcome, #{@user_1.name}!")
 
@@ -42,9 +42,8 @@ RSpec.describe 'user login' do
 
       click_on 'Login'
 
-      expect(current_path).to eq(user_path(@user_2))
-      expect(current_path).to_not eq(user_path(@user_1))
-    
+      expect(current_path).to eq(dashboard_path)
+      
       expect(page).to have_content("Welcome, #{@user_2.name}!")
     end
 
@@ -75,7 +74,7 @@ RSpec.describe 'user login' do
 
       click_on 'Login'
 
-      expect(current_path).to eq(user_path(@user_1))
+      expect(current_path).to eq(dashboard_path)
     
       expect(page).to have_content("Welcome, #{@user_1.name}!")
     end

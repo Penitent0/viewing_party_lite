@@ -7,5 +7,5 @@
 <h3>Current Users</h3>
 
 <% @users.each do |user| %>
-  <p><%= link_to "#{user.name}", user_path(user), local: true, method: :get %></p>
+  <p><%= link_to "#{user.name}", dashboard_path, local: true, method: :get %></p>
 <% end %>

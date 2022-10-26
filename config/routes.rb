@@ -11,6 +11,8 @@ Rails.application.routes.draw do
 
   post '/login', to: 'users#login_user', as: 'user_login'
 
+  get '/dashboard', to: 'users#show', as: 'dashboard'
+
   resources :users do
     resources :movies do
       resources :viewing_parties, only: %i[new create]
