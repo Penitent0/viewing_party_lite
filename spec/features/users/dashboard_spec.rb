@@ -28,7 +28,7 @@ RSpec.describe 'User Dashboard Page' do
     it 'I see A button to Discover Movies' do
       visit dashboard_path
       click_button 'Discover Movies'
-      expect(current_path).to eq(user_discover_path(@user_1))
+      expect(current_path).to eq(user_discover_path)
     end
 
     it 'A section that lists viewing parties' do
@@ -53,7 +53,7 @@ RSpec.describe 'User Dashboard Page' do
       click_on 'Login'
     end
     it 'When I visit user dashboard I see viewing parties that user has been invited too' do
-      visit new_user_movie_viewing_party_path(@user_1, 550)
+      visit new_user_movie_viewing_party_path(550)
       fill_in "Duration", with: "200"
       fill_in "Date", with: "Tue, 11 Oct 2022"
       fill_in "Time", with: "6:00 PM"
@@ -61,7 +61,7 @@ RSpec.describe 'User Dashboard Page' do
       check "user_#{@user_3.id}"
       click_button("Create Party")
       expect(current_path).to eq(dashboard_path)
-
+      
       within "#viewing-parties" do
         expect(page).to have_content(@movie1.title)
         expect(page).to have_content("Duration: 200")
@@ -71,7 +71,7 @@ RSpec.describe 'User Dashboard Page' do
     end
 
     it 'I see should see movie image' do
-      visit new_user_movie_viewing_party_path(@user_1, 550)
+      visit new_user_movie_viewing_party_path(550)
       fill_in "Duration", with: "200"
       fill_in "Date", with: "Tue, 11 Oct 2022"
       fill_in "Time", with: "6:00 PM"

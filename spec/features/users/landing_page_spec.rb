@@ -28,7 +28,9 @@ RSpec.describe 'landing page' do
 
     it 'has button to create new user and landing page link on all pages' do
       visit landing_page_path
+      click_on "Log Out"
 
+      expect(current_path).to eq(landing_page_path)
       click_button 'Create New User'
 
       expect(current_path).to eq(register_path)

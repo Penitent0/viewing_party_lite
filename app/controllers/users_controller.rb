@@ -25,7 +25,6 @@ class UsersController < ApplicationController
   end
 
   def login_form
-
   end
 
   def login_user
@@ -43,6 +42,11 @@ class UsersController < ApplicationController
       flash[:alert] = "Email Not Found"
       render :login_form
     end
+  end
+
+  def destroy 
+    session.delete(:user_id)
+    redirect_to landing_page_path
   end
 
   private

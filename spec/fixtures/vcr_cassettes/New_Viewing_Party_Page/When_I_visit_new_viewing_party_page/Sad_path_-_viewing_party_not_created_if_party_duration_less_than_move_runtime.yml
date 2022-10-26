@@ -25,7 +25,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Wed, 26 Oct 2022 03:05:18 GMT
+      - Wed, 26 Oct 2022 15:46:36 GMT
       Server:
       - openresty
       Cache-Control:
@@ -35,26 +35,26 @@ http_interactions:
       X-Memc-Key:
       - c7d0f1a47010fc55c00fcec4d5c4a5ef91fba03f
       X-Memc-Age:
-      - '1979'
+      - '14446'
       X-Memc-Expires:
-      - '13999'
+      - '1860'
       Etag:
-      - W/"3d4e15a72e85d18318014546653a8b64"
+      - W/"9a0e95bf078fc61d25464f0d9febf013"
       Vary:
       - Accept-Encoding,Accept-Encoding,Accept-Encoding
       - Origin
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 68fadeb91f97256bb67b03bfca74d830.cloudfront.net (CloudFront)
+      - 1.1 5292c0d5844327feadb38f1efe42ebc6.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - SEA73-P1
+      - SEA19-C3
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - Xao_OOQX-hfu3Gu1gVjtCtNxlQbLJ9e6cvwlCmXBXFlk11uHGU2Vlg==
+      - V7jkuzzsGYhid8n7w0-IIztDgLg0m423R9XO9RkCyQZdPZ-9-5hTRA==
       Age:
-      - '297'
+      - '717'
     body:
       encoding: ASCII-8BIT
       string: '{"adult":false,"backdrop_path":"/kXfqcdQKsToO0OUXHcrrNCHDBzO.jpg","belongs_to_collection":null,"budget":25000000,"genres":[{"id":18,"name":"Drama"},{"id":80,"name":"Crime"}],"homepage":"","id":278,"imdb_id":"tt0111161","original_language":"en","original_title":"The
@@ -66,8 +66,8 @@ http_interactions:
         and unquenchable sense of hope.","popularity":86.716,"poster_path":"/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg","production_companies":[{"id":97,"logo_path":"/7znWcbDd4PcJzJUlJxYqAlPPykp.png","name":"Castle
         Rock Entertainment","origin_country":"US"}],"production_countries":[{"iso_3166_1":"US","name":"United
         States of America"}],"release_date":"1994-09-23","revenue":28341469,"runtime":142,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"Fear
-        can hold you prisoner. Hope can set you free.","title":"The Shawshank Redemption","video":false,"vote_average":8.699,"vote_count":22530}'
-  recorded_at: Wed, 26 Oct 2022 03:10:15 GMT
+        can hold you prisoner. Hope can set you free.","title":"The Shawshank Redemption","video":false,"vote_average":8.699,"vote_count":22532}'
+  recorded_at: Wed, 26 Oct 2022 15:58:33 GMT
 - request:
     method: get
     uri: https://api.themoviedb.org/3/movie/278?api_key=<moviebd_api_key>
@@ -93,7 +93,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Wed, 26 Oct 2022 03:05:18 GMT
+      - Wed, 26 Oct 2022 15:46:36 GMT
       Server:
       - openresty
       Cache-Control:
@@ -103,26 +103,26 @@ http_interactions:
       X-Memc-Key:
       - c7d0f1a47010fc55c00fcec4d5c4a5ef91fba03f
       X-Memc-Age:
-      - '1979'
+      - '14446'
       X-Memc-Expires:
-      - '13999'
+      - '1860'
       Etag:
-      - W/"3d4e15a72e85d18318014546653a8b64"
+      - W/"9a0e95bf078fc61d25464f0d9febf013"
       Vary:
       - Accept-Encoding,Accept-Encoding,Accept-Encoding
       - Origin
       X-Cache:
       - Hit from cloudfront
       Via:
-      - 1.1 31119c39c5a6dc62dfa1fe940afd7be2.cloudfront.net (CloudFront)
+      - 1.1 0ec9ddba08fcd99386924593dbdbd44a.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - SEA73-P1
+      - SEA19-C3
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - 88UZMxrpAxyA-9L15DX4InVFuOvvzua213nZaa3bkPaPmu5qfP-pxw==
+      - 2r_X8IcJDe3xyFgahCeTxbqYy1RMPJlN4Ux74FfcXDQ34fWXmA_JiA==
       Age:
-      - '298'
+      - '717'
     body:
       encoding: ASCII-8BIT
       string: '{"adult":false,"backdrop_path":"/kXfqcdQKsToO0OUXHcrrNCHDBzO.jpg","belongs_to_collection":null,"budget":25000000,"genres":[{"id":18,"name":"Drama"},{"id":80,"name":"Crime"}],"homepage":"","id":278,"imdb_id":"tt0111161","original_language":"en","original_title":"The
@@ -134,6 +134,6 @@ http_interactions:
         and unquenchable sense of hope.","popularity":86.716,"poster_path":"/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg","production_companies":[{"id":97,"logo_path":"/7znWcbDd4PcJzJUlJxYqAlPPykp.png","name":"Castle
         Rock Entertainment","origin_country":"US"}],"production_countries":[{"iso_3166_1":"US","name":"United
         States of America"}],"release_date":"1994-09-23","revenue":28341469,"runtime":142,"spoken_languages":[{"english_name":"English","iso_639_1":"en","name":"English"}],"status":"Released","tagline":"Fear
-        can hold you prisoner. Hope can set you free.","title":"The Shawshank Redemption","video":false,"vote_average":8.699,"vote_count":22530}'
-  recorded_at: Wed, 26 Oct 2022 03:10:16 GMT
+        can hold you prisoner. Hope can set you free.","title":"The Shawshank Redemption","video":false,"vote_average":8.699,"vote_count":22532}'
+  recorded_at: Wed, 26 Oct 2022 15:58:33 GMT
 recorded_with: VCR 6.1.0

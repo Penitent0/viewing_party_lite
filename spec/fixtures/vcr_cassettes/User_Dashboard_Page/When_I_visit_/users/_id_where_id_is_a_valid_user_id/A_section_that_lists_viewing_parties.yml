@@ -25,7 +25,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Wed, 26 Oct 2022 03:10:11 GMT
+      - Wed, 26 Oct 2022 15:58:29 GMT
       Server:
       - openresty
       X-Cascade:
@@ -36,18 +36,20 @@ http_interactions:
       X-Cache:
       - Error from cloudfront
       Via:
-      - 1.1 001e7070d795018d01b93988b9723742.cloudfront.net (CloudFront)
+      - 1.1 9adef5b1c5fc9ca80d6f4f8d19e103a2.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - SEA73-P1
+      - SEA19-C3
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - svAxvUbS8rmFkAXL4GgQxKV6Lpv4yK8MQZ4cmO0V-zEN7jaUz6NzRg==
+      - J476hU0fXQjXDB66P2-6dB6KxYZBudpi9orDVyOAiZXXW3HKbyWTaQ==
+      Age:
+      - '1'
     body:
       encoding: ASCII-8BIT
       string: '{"success":false,"status_code":34,"status_message":"The resource you
         requested could not be found."}'
-  recorded_at: Wed, 26 Oct 2022 03:10:12 GMT
+  recorded_at: Wed, 26 Oct 2022 15:58:29 GMT
 - request:
     method: get
     uri: https://api.themoviedb.org/3/movie/?api_key=<moviebd_api_key>
@@ -73,7 +75,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Wed, 26 Oct 2022 03:10:11 GMT
+      - Wed, 26 Oct 2022 15:58:29 GMT
       Server:
       - openresty
       X-Cascade:
@@ -84,20 +86,20 @@ http_interactions:
       X-Cache:
       - Error from cloudfront
       Via:
-      - 1.1 09331f0822fc98eebaf04130a83dbd44.cloudfront.net (CloudFront)
+      - 1.1 f3ac324bf05099849ebda59e8136db0e.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - SEA73-P1
+      - SEA19-C3
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - e-tajrAjr02g8ZNV9Er2UYn-srJFhXbfCmYxugvFgmtXgRWSLo5jVg==
+      - xZxsv982zYLVO0-3D80ka07_LzvGOuRLzKiQZzDXRKBJ5uzLDpXotg==
       Age:
       - '1'
     body:
       encoding: ASCII-8BIT
       string: '{"success":false,"status_code":34,"status_message":"The resource you
         requested could not be found."}'
-  recorded_at: Wed, 26 Oct 2022 03:10:13 GMT
+  recorded_at: Wed, 26 Oct 2022 15:58:30 GMT
 - request:
     method: get
     uri: https://api.themoviedb.org/3/movie/?api_key=<moviebd_api_key>
@@ -123,7 +125,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Wed, 26 Oct 2022 03:10:11 GMT
+      - Wed, 26 Oct 2022 15:58:29 GMT
       Server:
       - openresty
       X-Cascade:
@@ -134,20 +136,20 @@ http_interactions:
       X-Cache:
       - Error from cloudfront
       Via:
-      - 1.1 ee330666adf9f04c8c30094f8ddcd004.cloudfront.net (CloudFront)
+      - 1.1 0906d4887f6625f4a4467d8d4fd268d2.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - SEA73-P1
+      - SEA19-C3
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - XoC3g4pbWiHRIy0O0ZMDvw47ORR6zOL50dvfaWpgcHOlRGYy1mawDg==
+      - NzG3ovHADRkhHeW8dOEtfSsC2FPVj4n5DBGiBKsMW5zchaSB3rL8Fg==
       Age:
       - '1'
     body:
       encoding: ASCII-8BIT
       string: '{"success":false,"status_code":34,"status_message":"The resource you
         requested could not be found."}'
-  recorded_at: Wed, 26 Oct 2022 03:10:13 GMT
+  recorded_at: Wed, 26 Oct 2022 15:58:30 GMT
 - request:
     method: get
     uri: https://api.themoviedb.org/3/movie/?api_key=<moviebd_api_key>
@@ -173,7 +175,7 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Wed, 26 Oct 2022 03:10:11 GMT
+      - Wed, 26 Oct 2022 15:58:29 GMT
       Server:
       - openresty
       X-Cascade:
@@ -184,18 +186,18 @@ http_interactions:
       X-Cache:
       - Error from cloudfront
       Via:
-      - 1.1 1508efc4152aa1778ed4adecb328b374.cloudfront.net (CloudFront)
+      - 1.1 ef8f66c83aecd87910ce2e1153544a20.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - SEA73-P1
+      - SEA19-C3
       Alt-Svc:
       - h3=":443"; ma=86400
       X-Amz-Cf-Id:
-      - MirWIHJOqhtBqA-0hsICshqSPawZm1dJr9r0JuqkzwzUm-w08cYSMQ==
+      - zPt8OmCZRklKd6YU8Lo7mBQM-ZKQ52gJUxi2XVOu7Ve07WdFKuvWww==
       Age:
       - '1'
     body:
       encoding: ASCII-8BIT
       string: '{"success":false,"status_code":34,"status_message":"The resource you
         requested could not be found."}'
-  recorded_at: Wed, 26 Oct 2022 03:10:13 GMT
+  recorded_at: Wed, 26 Oct 2022 15:58:30 GMT
 recorded_with: VCR 6.1.0

@@ -1,6 +1,6 @@
-<%= button_to "Create Viewing Party", new_user_movie_viewing_party_path(@user.id, @movie.id), local: true, method: :get %>
+<%= button_to "Create Viewing Party", new_user_movie_viewing_party_path(@movie.id), local: true, method: :get %>
 
-<%= button_to "Return to Discover Page", user_discover_path(@user.id), local: true, method: :get %>
+<%= button_to "Return to Discover Page", user_discover_path, local: true, method: :get %>
 
 <div id="movie-details">
   <p>Title: <%= @movie.title %></p>

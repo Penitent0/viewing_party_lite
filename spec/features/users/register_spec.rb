@@ -59,7 +59,6 @@ RSpec.describe 'User Registration page' do
       fill_in 'email', with: 'jimmydean1979@goodinternet.net'
 
       click_on 'Save'
-      save_and_open_page
       expect(page).to have_content("Password can't be blank")
     end
 

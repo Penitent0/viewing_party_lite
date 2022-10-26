@@ -3,13 +3,13 @@
 class ViewingPartiesController < ApplicationController
   
   def new
-    @user = User.find(params[:user_id])
+    @user = User.find(session[:user_id])
     @users = User.all.where.not(name: @user.name)
-    @movie = MovieFacade.details_poro(params[:movie_id])
+    @movie = MovieFacade.details_poro(params[:id])
   end
 
   def create
-    @user = User.find(params[:user_id])
+    @user = User.find(session[:user_id])
     @movie = MovieFacade.details_poro(params[:movie_id])
     @users = User.all.where.not(name: @user.name)
 
