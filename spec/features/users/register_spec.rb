@@ -28,7 +28,7 @@ RSpec.describe 'User Registration page' do
       click_on 'Save'
 
       user = User.last
-      expect(current_path).to eq(user_path(user))
+      expect(current_path).to eq(dashboard_path)
     end
 
     it 'has happy path' do
@@ -59,8 +59,7 @@ RSpec.describe 'User Registration page' do
       fill_in 'email', with: 'jimmydean1979@goodinternet.net'
 
       click_on 'Save'
-
-      expect(page).to have_content("Password digest can't be blank, Password confirmation can't be blank, and Password can't be blank")
+      expect(page).to have_content("Password can't be blank")
     end
 
     it 'has sad path for password confirmaiton not matching password' do

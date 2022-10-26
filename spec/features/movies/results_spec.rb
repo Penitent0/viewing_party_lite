@@ -6,27 +6,31 @@ RSpec.describe 'Movies Results Page Feature' do
   describe 'Movies Results Page' do
     describe 'When I visit discover movies page and click Top Movies button', :vcr do
       before :each do
-        @user1 = create(:user)
+        @user_1 = create(:user)
         @movies = MovieFacade.top_rated_poro
+        visit login_path
+        fill_in 'email', with: @user_1.email
+        fill_in 'password', with: @user_1.password
+        click_on 'Login'
       end
 
       it 'has button to return to Discover Page' do
-        visit user_discover_path(@user1)
+        visit user_discover_path
         click_button('Find Top Rated Movies')
         click_button('Discover Page')
-        expect(current_path).to eq(user_discover_path(@user1))
+        expect(current_path).to eq(user_discover_path)
       end
 
       it 'I should be taken to the movies results page' do
-        visit user_discover_path(@user1)
+        visit user_discover_path
         click_button('Find Top Rated Movies')
 
         expect(page.status_code).to eq(200)
-        expect(current_path).to eq(user_movies_path(@user1))
+        expect(current_path).to eq(user_movies_path)
       end
 
       it 'movies results page should have the 20 top rated movies and their vote average' do
-        visit user_discover_path(@user1)
+        visit user_discover_path
         click_button('Find Top Rated Movies')
 
         @movies.each do |movie|
@@ -37,15 +41,15 @@ RSpec.describe 'Movies Results Page Feature' do
       end
 
       it 'each movie title takes user to movies show page' do
-        visit user_discover_path(@user1)
+        visit user_discover_path
         click_button('Find Top Rated Movies')
         click_link 'The Godfather'
         expect(page.status_code).to eq(200)
-        expect(current_path).to eq(user_movie_path(@user1, 238))
+        expect(current_path).to eq(user_movie_path(238))
       end
 
       it 'each movie title appears in order' do
-        visit user_discover_path(@user1)
+        visit user_discover_path
         click_button('Find Top Rated Movies')
         expect('The Godfather').to appear_before('The Shawshank Redemption')
         expect('The Shawshank Redemption').to appear_before('The Godfather Part II')
@@ -54,28 +58,32 @@ RSpec.describe 'Movies Results Page Feature' do
 
     describe 'Movie Results Keyword Search', :vcr do
       before :each do
-        @user1 = create(:user)
+        @user_1 = create(:user)
         @movies = MovieFacade.search_poro('Dark')
+        visit login_path
+        fill_in 'email', with: @user_1.email
+        fill_in 'password', with: @user_1.password
+        click_on 'Login'
       end
       describe 'When I visit discover movies page and search movie title by keyword' do
         it 'has button to return to Discover Page' do
-          visit user_discover_path(@user1)
+          visit user_discover_path
           fill_in 'search_movies', with: 'Dark'
           click_button 'Find Movies'
           click_button('Discover Page')
-          expect(current_path).to eq(user_discover_path(@user1))
+          expect(current_path).to eq(user_discover_path)
         end
 
         it 'I should be taken to the movies results page' do
-          visit user_discover_path(@user1)
+          visit user_discover_path
           fill_in 'search_movies', with: 'Dark'
           click_button 'Find Movies'
           expect(page.status_code).to eq(200)
-          expect(current_path).to eq(user_movies_path(@user1))
+          expect(current_path).to eq(user_movies_path)
         end
 
         it 'should contain movies that match the keyword, and shows name and vote average' do
-          visit user_discover_path(@user1)
+          visit user_discover_path
           fill_in 'search_movies', with: 'Dark'
           click_button 'Find Movies'
 

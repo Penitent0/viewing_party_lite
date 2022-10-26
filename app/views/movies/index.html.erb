@@ -1,7 +1,7 @@
 <h2>Movies Results Page</h2>
 
-<%= button_to "Discover Page", user_discover_path(@user), local: true, method: :get %>
+<%= button_to "Discover Page", user_discover_path, local: true, method: :get %>
 
 <% @movies_array.each do |movie| %>
-    <p><%= link_to "#{movie.name}", user_movie_path(@user, movie.id), method: :get %> Vote Average: <%= movie.vote_average%> </p>
+    <p><%= link_to "#{movie.name}", user_movie_path(movie.id), method: :get %> Vote Average: <%= movie.vote_average%> </p>
 <% end %>

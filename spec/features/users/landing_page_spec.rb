@@ -13,30 +13,24 @@ RSpec.describe 'landing page' do
   describe 'Landing Page User Story' do
     before :each do
       @user_1 = create(:user)
-      @user_2 = create(:user)
-      @user_3 = create(:user)
+      visit login_path
+      fill_in 'email', with: @user_1.email
+      fill_in 'password', with: @user_1.password
+      click_on 'Login'
     end
     it 'When a user visits the root path they should be on the landing page and user name is link to user dashboard' do
       visit landing_page_path
 
       expect(page).to have_content('Viewing Party Lite')
       click_link @user_1.name.to_s
-      expect(current_path).to eq(user_path(@user_1))
-
-      visit landing_page_path
-
-      click_link @user_2.name.to_s
-      expect(current_path).to eq(user_path(@user_2))
-
-      visit landing_page_path
-
-      click_link @user_3.name.to_s
-      expect(current_path).to eq(user_path(@user_3))
+      expect(current_path).to eq(dashboard_path)
     end
 
     it 'has button to create new user and landing page link on all pages' do
       visit landing_page_path
+      click_on "Log Out"
 
+      expect(current_path).to eq(landing_page_path)
       click_button 'Create New User'
 
       expect(current_path).to eq(register_path)
